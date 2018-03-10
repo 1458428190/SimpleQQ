@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/qq</property> <!-- 连接数据库的url -->
+		<property name="driverCLass">com.mysql.jdbc.Driver</property>      <!-- 数据库驱动 -->
+		<property name="user">root</property>                               <!-- 数据库用户名 -->
+		<property name="password">123456</property>                         <!-- 数据库密码 -->
+		
+		<!-- 连接池的设置 -->
+		<property name="acquireInorement">5</property>
+		<property name="initialPoolSize">20</property>
+		<property name="minPoolSize">2</property>
+		<property name="maxPoolSize">50</property>
+	</default-config>
+</c3p0-config>
